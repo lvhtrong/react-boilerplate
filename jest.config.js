@@ -9,10 +9,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 98,
-      branches: 91,
-      functions: 98,
-      lines: 98,
+      statements: 90,
+      branches: 90,
+      functions: 90,
+      lines: 90,
     },
   },
   moduleDirectories: ['node_modules', 'app'],
@@ -28,4 +28,5 @@ module.exports = {
   setupFiles: ['raf/polyfill'],
   testRegex: 'tests/.*\\.test\\.js$',
   snapshotSerializers: [],
+  testPathIgnorePatterns: ['/node_modules/', '/internals/', '/server/'],
 };
